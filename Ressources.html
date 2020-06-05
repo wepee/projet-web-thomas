@@ -76,8 +76,18 @@
 		<h2 class="display-5">Un extrait de code</h2>
 		<hr>
 		<pre>
-			
-		</pre>
+			<code class="cpp">
+				 string Card::toString(vector&lt;Card&gt; _cards){
+				 	string cards;
+
+	 				for (int i = 0; i < _cards.size(); i++)
+		 				cards += Card::toString(_cards[i]);
+
+	 				//pour retirer le premier "|"
+	 				return cards.erase(0, 1);
+ 				}
+    			</code>
+   		</pre>
 	</div>
 
 
